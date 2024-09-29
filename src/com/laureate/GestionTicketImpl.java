@@ -16,11 +16,6 @@ public class GestionTicketImpl implements GestionTickets{
         System.out.println("Ticket registrado correctamente.");
     }
 
-  //  @Override
-    //public void actualizarTicket(String codTicket, String descripcion, String estado) throws TicketNoEncontradoException {
-    //    throw new UnsupportedOperationException("El personal Aula y Laboratorios no puede actualizar tickets.");
-    //}
-
     @Override
     public void actualizarTicket(String codTicket, String descripcion, String estado) throws TicketNoEncontradoException {
         for (Ticket ticket : tickets) {
